@@ -1,0 +1,10 @@
+{
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
+}
