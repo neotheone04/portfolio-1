@@ -1,31 +1,34 @@
-# Portfolio - PDF reference rebuild
+# Portfolio v07 — 2026-10-19 — Full site
 
-Plain HTML, CSS, JavaScript. index.html lives at repository root. No installation, build process, API, or output directory required.
+## Manual upload to GitHub
 
-## Update the live Azure site
+1. Extract portfolio-v07-2026-10-19-full.zip.
+2. Open neotheone04/portfolio-1 on branch main, at the repository root.
+3. Choose Add file > Upload files.
+4. Drag ALL extracted files AND all three asset folders into the upload area. Upload the contents, not the ZIP or an enclosing folder.
+5. Commit directly to main. Existing files at matching paths are replaced; new files are added.
+6. Wait for the existing Azure workflow to succeed, then refresh the site with Ctrl+Shift+R.
 
-1. Extract portfolio-pdf-rebuild.zip.
-2. Upload ALL extracted files and the assets folder to neotheone04/portfolio-1 on branch main. Replace matching existing files. index.html must stay at repository root. Do not upload the ZIP itself.
-3. Commit changes. Leave the existing .github/workflows Azure deployment file and secrets in place.
-4. In GitHub Actions, wait for the Azure workflow to succeed. Refresh the live site with Ctrl+Shift+R.
+Leave the existing .github/workflows deployment file and Azure settings unchanged. No Azure resource recreation is necessary.
 
-Azure settings remain: Custom preset; App location /; API and Output locations blank. No new Azure resource is needed.
+## Three Project 1 versions
 
-## Contents
+- project1.html: current working page, Growing a Student Design Community Through Marketing. Contains the RACE draft, supplied metrics with collective attribution, distinct Marketing Officer and Vice-President responsibilities, and labeled work-sample placeholders.
+- project1-original.html: preserved Figma-inspired template backup.
+- project1-backup2.html: preserved first adaptation of the Work Samples PDF.
 
-- index.html: responsive homepage, reconstructed from the supplied full-resolution PDF.
-- project.html: complete project detail page, including Implementation and Development, Launch and Evaluation, and Conclusion.
-- ecommart.html, health-link.html: template previews; their case-study content was not supplied.
-- styles.css and script.js: shared responsive layout and placeholder dialogs.
-- assets/: high-resolution artwork rendered/extracted from the supplied PDFs. The text in visual design mockups is part of those illustrations; page headings and body text remain editable HTML.
-- 404.html, staticwebapp.config.json: Azure missing-page handling.
+The homepage and other project preview pages link to project1.html. To view backups, replace project1.html in the website URL with either backup filename. Backups are not shown as extra homepage projects.
 
-## Requested deviations from the PDF
+Each backup has its own CSS, JavaScript, and asset folder. Keep those files and folders so later edits to the working site do not change the backups.
 
-Project title is Social Media Marketing - UX Design Club, displayed smaller. The large banner below the title is removed. Five numbered placeholder icons sit in one row, with Tool 1 through Tool 5 beneath them.
+project.html redirects old links to project1.html; it is not another independent project version.
 
-All other identity and project copy remains template content. Grocery-app case-study text has not been invented or rewritten to claim social-media work. Social, contact, and policy buttons open placeholder dialogs until real links/content are supplied. Poppins loads through Google Fonts, with Arial as offline fallback. Decorative geometry and responsive layouts are recreated in CSS rather than treating the page as a single image.
+## Other files
 
-## Verification
+index.html is the homepage. ecommart.html and health-link.html remain template previews. styles.css and script.js provide shared styling/behavior; project1.css styles the working case study. assets/ holds current site resources. 404.html and staticwebapp.config.json provide Azure missing-page handling.
 
-Rendered and visually inspected both PDF references. Visually reviewed the desktop homepage, project header, mobile homepage and project content, and implementation panel in the browser. Checked viewport widths 320, 390, 768, and 1440 for the representative layouts. Verified mobile tools stay in one row, no horizontal page overflow in those checks, project navigation, and contact dialog open/close. Checked HTML nesting, local asset/link references, and Azure configuration JSON.
+Content is preliminary. The supplied metrics are not independently verified. Work-sample placeholders await original assets. Contact/social/policy controls remain template dialogs. Poppins uses Google Fonts, with Arial as a fallback.
+
+No installation or build process is needed. Azure Custom preset: App location /; API location blank; Output location blank.
+
+Includes the latest Jay Phatak homepage greeting, communication/design/marketing introduction, and View Project 1 button. This full package supersedes all earlier ZIPs.
