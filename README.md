@@ -1,34 +1,29 @@
-# Portfolio v07 — 2026-10-19 — Full site
+# Portfolio v09 — 2026-10-23 — Complete website
 
-## Manual upload to GitHub
+This is the complete current website. Ignore earlier ZIPs.
 
-1. Extract portfolio-v07-2026-10-19-full.zip.
+## Manual GitHub upload
+
+1. Extract portfolio-v09-2026-10-23-full.zip.
 2. Open neotheone04/portfolio-1 on branch main, at the repository root.
 3. Choose Add file > Upload files.
-4. Drag ALL extracted files AND all three asset folders into the upload area. Upload the contents, not the ZIP or an enclosing folder.
-5. Commit directly to main. Existing files at matching paths are replaced; new files are added.
-6. Wait for the existing Azure workflow to succeed, then refresh the site with Ctrl+Shift+R.
+4. Drag ALL extracted files and folders into GitHub. Keep the folder structure. Upload the contents, not the ZIP or an enclosing folder.
+5. Commit to main. Leave the existing .github/workflows Azure file and deployment secrets unchanged.
+6. Wait for the Azure deployment to succeed, then refresh your live site with Ctrl+Shift+R.
 
-Leave the existing .github/workflows deployment file and Azure settings unchanged. No Azure resource recreation is necessary.
+Azure settings stay: Custom preset; App location /; API and Output locations blank.
 
-## Three Project 1 versions
+## Included
 
-- project1.html: current working page, Growing a Student Design Community Through Marketing. Contains the RACE draft, supplied metrics with collective attribution, distinct Marketing Officer and Vice-President responsibilities, and labeled work-sample placeholders.
-- project1-original.html: preserved Figma-inspired template backup.
-- project1-backup2.html: preserved first adaptation of the Work Samples PDF.
+- Homepage with photo banner, two project rows, and working Project 1 navigation.
+- Current RACE case study and enlarged, grouped tool logos with single-line names.
+- Supplied event photograph at the top of Project 1.
+- Instagram work sample integrated into REACH.
+- LinkedIn work sample and supplied group photo integrated into ENGAGE.
+- Removed duplicate Selected Work gallery, Vice-President dropdown, and under-image full-post text links. Images remain clickable.
+- Original template backup: project1-original.html, with independent resources.
+- Work Samples backup: project1-backup2.html, with independent resources.
 
-The homepage and other project preview pages link to project1.html. To view backups, replace project1.html in the website URL with either backup filename. Backups are not shown as extra homepage projects.
+project1.html is the current working page. project.html redirects the old URL to it. Unfilled case-study illustrations and the second homepage project remain clearly labeled placeholders. Contact, social, and policy controls remain template dialogs.
 
-Each backup has its own CSS, JavaScript, and asset folder. Keep those files and folders so later edits to the working site do not change the backups.
-
-project.html redirects old links to project1.html; it is not another independent project version.
-
-## Other files
-
-index.html is the homepage. ecommart.html and health-link.html remain template previews. styles.css and script.js provide shared styling/behavior; project1.css styles the working case study. assets/ holds current site resources. 404.html and staticwebapp.config.json provide Azure missing-page handling.
-
-Content is preliminary. The supplied metrics are not independently verified. Work-sample placeholders await original assets. Contact/social/policy controls remain template dialogs. Poppins uses Google Fonts, with Arial as a fallback.
-
-No installation or build process is needed. Azure Custom preset: App location /; API location blank; Output location blank.
-
-Includes the latest Jay Phatak homepage greeting, communication/design/marketing introduction, and View Project 1 button. This full package supersedes all earlier ZIPs.
+No build process or installation is required.
